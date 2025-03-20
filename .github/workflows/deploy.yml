@@ -28,6 +28,7 @@ jobs:
 
       - name: Build the extension
         run: |
+          cd kernel
           jlpm 
           jlpm build:prod
           hatch build
